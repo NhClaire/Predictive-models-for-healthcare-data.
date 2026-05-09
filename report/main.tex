@@ -1,0 +1,198 @@
+\documentclass[oneside,a4paper,12pt]{report}
+
+% Gói mã hóa tiếng Việt
+\usepackage[utf8]{inputenc}        % Nhập văn bản UTF-8
+\usepackage[T5]{fontenc}           % Hỗ trợ tiếng Việt
+\usepackage[vietnamese]{babel}     % Dịch sang tiếng Việt
+\DeclareTextSymbolDefault{\DH}{T1} % Hỗ trợ chữ Đ
+
+% Cấu hình trang
+
+\usepackage[left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+% Gói toán học
+\usepackage{amsmath, amsfonts, amssymb}
+
+% Gói trình bày code
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Gói hiển thị hình ảnh và bảng biểu
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{ragged2e}
+\usepackage[table]{xcolor} % Table coloring
+\usepackage{longtable} 
+\usepackage{enumitem}
+% Gói tạo hyperlink trong mục lục, tài liệu tham khảo, v.v.
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage{hyperref}
+
+
+% Định nghĩa style cho code (safecode)
+\lstdefinestyle{safecode}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{red},
+    numberstyle=\tiny\color{gray},
+    numbers=left,
+    numbersep=5pt,
+    frame=single,
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=4,
+    showstringspaces=false,
+    captionpos=b
+}
+
+% Sử dụng natbib thay vì biblatex để tránh warning
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{ieeetr}  % Style IEEE cho tài liệu kỹ thuật
+
+% Chèn hình, các hình trong luận văn được để trong thư mục Images/
+\graphicspath{ {images/} }
+
+% Chèn và định dạng mã nguồn
+\usepackage{color}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+% Chèn và định dạng mã giả
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+% Bảng biểu
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{tocloft}
+\usepackage{placeins}
+% Hiển thị số chương có dấu chấm sau số trong mục lục
+\usepackage{titlesec}
+\titlelabel{\thetitle. \quad}
+
+
+% Đảm bảo hiển thị subsubsection
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+% In đậm các mục \section trong mục lục
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
+
+\renewcommand{\contentsname}{\huge\textbf{Mục lục}}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsubsecfont}{\normalfont}
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftsubsecpagefont}{\normalfont}
+\renewcommand{\cftsubsubsecpagefont}{\normalfont}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{2em}
+\setlength{\cftsubsubsecindent}{4em}
+\setlength{\cftbeforesecskip}{12pt}       % Dãn dòng giữa các \section
+\setlength{\cftbeforesubsecskip}{6pt}    % Dãn dòng giữa các \subsection
+\setlength{\cftbeforesubsubsecskip}{2pt} 
+\renewcommand{\cftsecpagefont}{\bfseries} 
+\usepackage[labelfont=bf]{caption}
+\usepackage{setspace}
+\singlespacing
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}                 % Xóa toàn bộ mặc định
+
+% Footer ở giữa
+\cfoot{\thepage}          
+
+% Header bên trái, giữa, phải (tùy bạn muốn)
+\lhead{Báo cáo Seminar cho Khoa học Dữ liệu.}     % Trái: tên tài liệu
+\chead{}
+\rhead{}
+% Thụt vào đầu dòng
+\usepackage{indentfirst}
+
+% Trang bìa
+%\usepackage{tikz}
+%\usetikzlibrary{calc}
+\newcommand\HRule{\rule{\textwidth}{1pt}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+% ========================================================================================= %
+% CHÚ Ý: Thông tin chung về KLTN - sinh viên điền vào đây để tự động update các trang khác  %
+% ========================================================================================= %
+\renewcommand{\figurename}{\textbf{Hình}}
+\renewcommand{\tablename}{\textbf{Bảng}}
+\renewcommand{\figureautorefname}{Hình}
+\renewcommand{\tableautorefname}{Bảng}
+
+% Tùy chỉnh tiêu đề bibliography
+\renewcommand{\refname}{Tài liệu tham khảo}
+\renewcommand{\bibname}{Tài liệu tham khảo}
+
+\begin{document}
+
+\input{Title/title.tex}
+
+\pagenumbering{arabic}
+ % Đánh số 1, 2, 3, ...
+%\addcontentsline{toc}{chapter}{Lời cam đoan}
+%\include{Appendix/reassurances}
+
+% ===== MỤC LỤC =====
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+
+% Các chương nội dung
+%\include{Section/preface.tex}
+%\include{Section/list}
+\pagenumbering{arabic}
+\include{Section/introduction}
+\include{Section/theoretical formulation}
+%\include{Section/imbalance}
+%\include{Section/method.tex}
+%\include{Section/hanche.tex}
+
+% In toàn bộ tài liệu tham khảo
+%\renewcommand{\refname}{Tài liệu tham khảo}
+
+\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{references}
+%\addcontentsline{toc}{section}{Tài liệu tham khảo}
+
+\end{document}

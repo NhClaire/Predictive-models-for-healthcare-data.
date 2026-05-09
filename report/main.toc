@@ -1,0 +1,35 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {1}Dữ liệu Healthcare}{1}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Các dạng dữ liệu}{1}{subsection.0.1.1}%
+\contentsline {paragraph}{Hồ sơ sức khỏe điện tử (EHR) và hồ sơ bệnh án điện tử (EMR).}{1}{subsection.0.1.1}%
+\contentsline {paragraph}{Dữ liệu hành chính.}{1}{subsection.0.1.1}%
+\contentsline {paragraph}{Dữ liệu yêu cầu thanh toán (Claims Data).}{1}{subsection.0.1.1}%
+\contentsline {paragraph}{Sổ đăng ký bệnh nhân/bệnh lý (Patient/Disease Registries).}{2}{subsection.0.1.1}%
+\contentsline {paragraph}{Khảo sát sức khỏe (Health Surveys).}{2}{subsection.0.1.1}%
+\contentsline {paragraph}{Dữ liệu thử nghiệm lâm sàng.}{2}{subsection.0.1.1}%
+\contentsline {paragraph}{Dữ liệu hệ gen.}{2}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Các vấn đề cần được giải quyết trong lĩnh vực Healthcare Data}{3}{subsection.0.1.2}%
+\contentsline {paragraph}{Phân phối dữ liệu lệch và không đồng nhất (Skewed and Heteroskedastic Data).}{3}{subsection.0.1.2}%
+\contentsline {paragraph}{Mối quan hệ phi tuyến (Nonlinear Relationships).}{3}{subsection.0.1.2}%
+\contentsline {paragraph}{Sự mất cân bằng giữa các lớp trong phân loại (Imbalanced Classes).}{3}{subsection.0.1.2}%
+\contentsline {paragraph}{Dữ liệu bị thiếu và hiện tượng bỏ cuộc (Missing Data and Dropout).}{4}{subsection.0.1.2}%
+\contentsline {paragraph}{Vấn đề ``Lời nguyền đa chiều'' trong dữ liệu lớn (High-Dimensional Data).}{4}{subsection.0.1.2}%
+\contentsline {section}{\numberline {2}Các mô hình dự đoán}{5}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Hồi quy logistic}{5}{subsection.0.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Khái niệm}{5}{subsubsection.0.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Hàm Sigmoid}{5}{subsubsection.0.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Nguyên lý hoạt động}{6}{subsubsection.0.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Hàm mất mát và phương pháp tối ưu}{7}{subsubsection.0.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}Ưu điểm}{8}{subsubsection.0.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}Hạn chế}{8}{subsubsection.0.2.1.6}%
+\contentsline {subsubsection}{\numberline {2.1.7}Ứng dụng thực tế}{8}{subsubsection.0.2.1.7}%
+\contentsline {subsection}{\numberline {2.2}Mô hình SVM (Support Vector Machine)}{9}{subsection.0.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Khái niệm}{9}{subsubsection.0.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Siêu Phẳng, Margin và Support Vectors}{9}{subsubsection.0.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Tối Đa Hóa Khoảng Cách Biên}{10}{subsubsection.0.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Nguyên lý hoạt động}{10}{subsubsection.0.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Linear SVM và Non-linear SVM}{11}{subsubsection.0.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.6}Kernel trick và các hàm kernel phổ biến}{12}{subsubsection.0.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}Hàm mất mát và phương pháp tối ưu hóa}{12}{subsubsection.0.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}Ưu điểm và hạn chế}{13}{subsubsection.0.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.9}Ứng dụng thực tế}{13}{subsubsection.0.2.2.9}%
