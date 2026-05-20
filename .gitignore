@@ -1,0 +1,11 @@
+icmr/ICMR Datasets/
+diabetes/archive/
+*.aux
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.wsp
+/report/images
