@@ -1,5 +1,6 @@
 icmr/ICMR Datasets/
 diabetes/archive/
+*.csv
 *.aux
 *.fls
 *.log
@@ -8,4 +9,5 @@ diabetes/archive/
 *.synctex.gz
 *.fdb_latexmk
 *.wsp
+*.pyc
 /report/images

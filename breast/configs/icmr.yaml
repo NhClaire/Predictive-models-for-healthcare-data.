@@ -1,0 +1,17 @@
+dataset: icmr
+
+data_path: "D:/hcmus/s8/kltn/icmr/ICMR Datasets/data.csv"
+labels_path: "D:/hcmus/s8/kltn/icmr/ICMR Datasets/labels.csv"
+merge_col: "Unnamed: 0"
+label_col: "Class"
+sample_col: null
+
+n_clusters: 5
+class_labels: ["BRCA", "KIRC", "LUAD", "PRAD", "COAD"]
+random_state: 42
+
+umap_n_neighbors: 5
+umap_min_dist: 0.1
+
+dbscan_eps: 5.0
+dbscan_min_samples: 5
