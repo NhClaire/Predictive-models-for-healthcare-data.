@@ -1,4 +1,4 @@
-icmr/ICMR Datasets/
+breast/datasets/
 diabetes/archive/
 *.csv
 *.aux

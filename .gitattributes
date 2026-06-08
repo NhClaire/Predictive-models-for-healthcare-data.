@@ -1,1 +1,4 @@
 icmr/ICMR[[:space:]]Datasets/data.csv filter=lfs diff=lfs merge=lfs -text
+*.py filter=lfs diff=lfs merge=lfs -text
+*.tex filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text

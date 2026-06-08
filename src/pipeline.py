@@ -1,11 +1,3 @@
-from __future__ import annotations
-
-from sklearn.model_selection import StratifiedKFold, train_test_split
-
-
-def make_split(X, y, test_size=0.2, random_state=42):
-    return train_test_split(X, y, test_size=test_size, stratify=y, random_state=random_state)
-
-
-def make_cv(k=5, random_state=42):
-    return StratifiedKFold(n_splits=k, shuffle=True, random_state=random_state)
+version https://git-lfs.github.com/spec/v1
+oid sha256:c39a05d006ed215d2005ffe1ff444a9e8bf20997da7bd2794cf4b52f969c142d
+size 373
